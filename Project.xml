@@ -24,7 +24,7 @@
 	<define name="HSCRIPT_ALLOWED" />
 	<define name="LUA_ALLOWED" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
-	<define name="DISCORD_ALLOWED" unless="ios" />
+	<define name="DISCORD_ALLOWED" unless="mobile" />
 	<define name="TRANSLATIONS_ALLOWED" />
 	<define name="VIDEOS_ALLOWED" unless="32bits"/>
 	<define name="ASTC_SUPPORT" if="mobile" />
