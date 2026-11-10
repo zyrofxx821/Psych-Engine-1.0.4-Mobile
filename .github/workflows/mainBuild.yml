@@ -19,7 +19,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v6.0.2
-
+      - name: Add mod
+        run: |
+          unzip -q thorns-pico-mix.zip
+          mkdir -p example_mods mods
+          cp -r thorns-pico-mix example_mods/
+          mv thorns-pico-mix mods/
       - name: Setup Haxe
         uses: krdlab/setup-haxe@v2.1.0
         with:
